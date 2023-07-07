@@ -45,12 +45,11 @@
     </div>
 
     <script type="text/javascript">
-        <!-- Code javascript -->
         function button_click() {
             let name = Document.querySelector('#name').value;
-            let result = confirm("tao thích" + name + ". Mi có đệ tử của bổn cung ko?");
+            let result = confirm("tao thích" + name + ". Mi có muốn lèm đệ tử của bổn cung ko?");
             while (result !== true) {
-                result = confirm("tao thích" + name + ". Mi có đệ tử của bổn cung ko?")
+                result = confirm("tao thích" + name + ". Mi có muốn lèm đệ tử của bổn cung ko?")
             }
             document.body.className = "bg-heart";
          }
