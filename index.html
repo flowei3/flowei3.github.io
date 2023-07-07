@@ -37,24 +37,21 @@
     </style>
 </head>
 <body class="bg-normal">
-
-    <div class=""container">
-    <h1>Tên của mi là gì?</h1>
-    <input type="text" id="name" planceholder="Viết tên mi dèo" />
-    <button onclick="button_click()">Click me!</button>
+    <div class="container">
+        <h1>Tên của mi là gì?</h1>
+        <input type="text" id="name" placeholder="Viết tên mi dèo" />
+        <button onclick="button_click()">Click me!</button>
     </div>
 
     <script type="text/javascript">
         function button_click() {
-            let name = Document.querySelector('#name').value;
+            let name = document.querySelector('#name').value;
             let result = confirm("tao thích" + name + ". Mi có muốn lèm đệ tử của bổn cung ko?");
             while (result !== true) {
                 result = confirm("tao thích" + name + ". Mi có muốn lèm đệ tử của bổn cung ko?")
             }
             document.body.className = "bg-heart";
          }
-
     </script>
-    
 </body>
 </html>
