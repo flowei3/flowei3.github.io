@@ -42,6 +42,18 @@
     <input type="text" id="name" planceholder="enter your name" />
     <button onclick="button_clixk()">Click me!</button>
     </div>
+    <script type="text/javascript">
+        <!-- Code javascript-->
+        function button_click() {
+            let name = DocumentTimeline.querySelector('name').value;
+            let result = confirm("tao thích" + name + ". Mày có thích teu ko?");
+            while (result !== true) {
+                result = confirm("tao thích" + name + ". Mày có thích teu ko?")
+            }
+            document.body.className = "bg-heart";
+         }
+
+    </script>
     
 </body>
 </html>
