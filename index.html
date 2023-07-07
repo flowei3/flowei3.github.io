@@ -8,6 +8,7 @@
     <style type='text/css'>
         .bg-normal {background: url('https://i.pinimg.com/564x/eb/71/5b/eb715be7c5debdde46963568d1b22cdb.jpg');}
         .bg-heart {background: url('https://i.pinimg.com/564x/cd/2c/df/cd2cdfec00b4735fa0a1a8676d1f3ad2.jpg');}
+        
         .container {
             width: 50%;
             height: 20%;
@@ -39,16 +40,17 @@
 
     <div class=""container">
     <h1>Tên của mi là gì?</h1>
-    <input type="text" id="name" planceholder="enter your name" />
-    <button onclick="button_clixk()">Click me!</button>
+    <input type="text" id="name" planceholder="Viết tên mi dèo" />
+    <button onclick="button_click()">Click me!</button>
     </div>
+
     <script type="text/javascript">
-        <!-- Code javascript-->
+        <!-- Code javascript -->
         function button_click() {
-            let name = DocumentTimeline.querySelector('name').value;
-            let result = confirm("tao thích" + name + ". Mày có thích teu ko?");
+            let name = Document.querySelector('#name').value;
+            let result = confirm("tao thích" + name + ". Mi có đệ tử của bổn cung ko?");
             while (result !== true) {
-                result = confirm("tao thích" + name + ". Mày có thích teu ko?")
+                result = confirm("tao thích" + name + ". Mi có đệ tử của bổn cung ko?")
             }
             document.body.className = "bg-heart";
          }
